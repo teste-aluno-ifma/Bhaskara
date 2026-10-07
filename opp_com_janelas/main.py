@@ -60,6 +60,7 @@ class JanelaBhaskara:
         self.resultado.set(self.exibidor.criar_texto(self.equacao, delta, self.raiz_1, self.raiz_2))
 
     def limpar(self):
+        # Apaga os campos, zera o calculo guardado e devolve o foco ao coeficiente a
         for campo in self.campos.values():
             campo.delete(0, tk.END)
         self.equacao = None
