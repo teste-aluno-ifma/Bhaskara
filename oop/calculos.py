@@ -3,6 +3,7 @@ import math
 
 class EquacaoSegundoGrau:
     def __init__(self, coeficiente_a, coeficiente_b, coeficiente_c):
+        """Função que recebe as entradas da formula de Bhaskara""""
         if coeficiente_a == 0:
             raise ValueError("O coeficiente a deve ser diferente de zero.")
 
